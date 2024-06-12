@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #84e1e7;
+    color: #333;
+}
+
+header {
+    background-color: #84e1e7;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    gap: 20px; /* Espaço entre os produtos */
+}
+
+.produto {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Largura de 33% menos a margem */
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #09f315;
+    margin-bottom: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.produto h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #09f3e0;
+}
+
+.produto p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.produto strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.produto button {
+    display: block;
+    width: 100%;
+    background-color: #09f315;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #45a049;
+}
+
+#testemunhos {
+    background: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testemunhos h2 {
+    font-size: 2em;
+    color: #f70000;
+    margin-bottom: 20px;
+}
+
+#testemunhos blockquote {
+    font-style: italic;
+    color: #fffbfb;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#testemunhos cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
